@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KQFT2P7');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +23,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQFT2P7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div>
         <h1>title of article</h1>
         <div>
@@ -28,31 +39,31 @@
             <a href="./landing.html" style="font-size:10rem" id="buyLink">Go to Landing!</a>
         </div>
     </div>
-    <script>
-        const firePixel = (e) => {
-              /** DO NOT MODIFY THIS CODE**/
-              !function(_window, _document) {
-                var OB_ADV_ID='001d2da7ebcaeb022a448ccdc4680c75b1';
-                if (_window.obApi) {var toArray = function(object) {return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];};_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));return;}
-                var api = _window.obApi = function() {api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);};api.version = '1.1';api.loaded = true;api.marketerId = OB_ADV_ID;api.queue = [];var tag = _document.createElement('script');tag.async = true;tag.src = '//amplify.outbrain.com/cp/obtp.js';tag.type = 'text/javascript';var script = _document.getElementsByTagName('script')[0];script.parentNode.insertBefore(tag, script);}(window, document);
-            obApi('track', 'PAGE_VIEW');
-            obApi('track', 'click');
-        };
-        let targetElement = document.getElementById('buyLink');
-        targetElement.addEventListener("click", firePixel, false);
+    <!--<script>-->
+        <!--const firePixel = (e) => {-->
+              <!--/** DO NOT MODIFY THIS CODE**/-->
+              <!--!function(_window, _document) {-->
+                <!--var OB_ADV_ID='001d2da7ebcaeb022a448ccdc4680c75b1';-->
+                <!--if (_window.obApi) {var toArray = function(object) {return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];};_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));return;}-->
+                <!--var api = _window.obApi = function() {api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);};api.version = '1.1';api.loaded = true;api.marketerId = OB_ADV_ID;api.queue = [];var tag = _document.createElement('script');tag.async = true;tag.src = '//amplify.outbrain.com/cp/obtp.js';tag.type = 'text/javascript';var script = _document.getElementsByTagName('script')[0];script.parentNode.insertBefore(tag, script);}(window, document);-->
+            <!--obApi('track', 'PAGE_VIEW');-->
+            <!--obApi('track', 'click');-->
+        <!--};-->
+        <!--let targetElement = document.getElementById('buyLink');-->
+        <!--targetElement.addEventListener("click", firePixel, false);-->
 
 
 
-        // targetElement.addEventListener("click", busyWait, false);
-        // const busyWait = () => {
-        //     console.log("check");
-        //     var startTime = new Date().getTime();
-        //     while (true) {
-        //         if (new Date().getTime() >= startTime + 1000) {
-        //             break;
-        //         }
-        //     }
-        // };
-    </script>
+        <!--// targetElement.addEventListener("click", busyWait, false);-->
+        <!--// const busyWait = () => {-->
+        <!--//     console.log("check");-->
+        <!--//     var startTime = new Date().getTime();-->
+        <!--//     while (true) {-->
+        <!--//         if (new Date().getTime() >= startTime + 1000) {-->
+        <!--//             break;-->
+        <!--//         }-->
+        <!--//     }-->
+        <!--// };-->
+    <!--</script>-->
 </body>
 </html>

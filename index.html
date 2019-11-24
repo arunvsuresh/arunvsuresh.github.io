@@ -46,9 +46,15 @@ obApi('track', 'PAGE_VIEW');
             random jargon
         </div>
         <div>
-            <button onclick="window.location.href = "./landing.html";">Go to Landing!!!!!!</button>
-<!--                 <a href="./landing.html" style="font-size:10rem" id="buyLink">Go to Landing!!!!!!</a> -->
+<!--             <button onclick="window.location.href = "./landing.html";">Go to Landing!!!!!!</button> -->
+                <a href="./landing.html" onclick="click()" style="font-size:10rem" id="buyLink">Go to Landing!!!!!!</a>
         </div>
+        <script>
+            function click() {
+                obApi('track', 'click');
+            }
+        
+      </script>
     </div>
     <!--<script>-->
         <!--const firePixel = (e) => {-->

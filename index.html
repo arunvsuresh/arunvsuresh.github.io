@@ -59,6 +59,7 @@
     if (_window.obApi) {var toArray = function(object) {return Object.prototype.toString.call(object) === '[object Array]' ? object : [object];};_window.obApi.marketerId = toArray(_window.obApi.marketerId).concat(toArray(OB_ADV_ID));return;}
     var api = _window.obApi = function() {api.dispatch ? api.dispatch.apply(api, arguments) : api.queue.push(arguments);};api.version = '1.1';api.loaded = true;api.marketerId = OB_ADV_ID;api.queue = [];var tag = _document.createElement('script');tag.async = true;tag.src = '//amplify.outbrain.com/cp/obtp.js';tag.type = 'text/javascript';var script = _document.getElementsByTagName('script')[0];script.parentNode.insertBefore(tag, script);}(window, document);
 obApi('track', 'PAGE_VIEW');
+    obApi('track', 'buttonclick');
 </script>
 
     
@@ -66,8 +67,8 @@ obApi('track', 'PAGE_VIEW');
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQFT2P7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!--     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQFT2P7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <!-- End Google Tag Manager (noscript) -->
     <div>
         <h1>title of article</h1>
@@ -79,8 +80,13 @@ obApi('track', 'PAGE_VIEW');
         </div>
         <div>
 <!--             <button onclick=" window.open('./landing.html','_blank'); click()">Go to Landing!!!!!!</button> -->
-             <a href="./landing.html" style="font-size:10rem" id="buyLink">Go to Landing!!!!!!</a>
+             <a href="./landing.html" onclick="click()" style="font-size:10rem" id="buyLink">Go to Landing!!!!!!</a>
         </div>
+        <script>
+            function click() {
+                obApi('track', 'buttonclick');
+            }
+        </script>
         
     </div>
     <!--<script>-->

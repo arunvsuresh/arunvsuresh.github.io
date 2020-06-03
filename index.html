@@ -89,7 +89,7 @@ obApi('track', 'PAGE_VIEW');
     <script>
         function buttonclick() {
                     fetch('https://tr.outbrain.com/pixel?ob_click_id=v1-521545010f74369134460124537c4139-001d2da7ebcaeb022a448ccdc4680c75b1-gjrtczdggazdelldg5stmljugezdmllcga4dollgmiytgmzuheydaylbgq&name=buttonclick')
-                          .then(response => response.json());
+                          .then(response => response.json())
                           .then(data => console.log(data));
             
         }

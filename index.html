@@ -81,19 +81,20 @@ obApi('track', 'PAGE_VIEW');
         </div>
         <div>
 <!--             <button onclick=" window.open('./landing.html','_blank'); click()">Go to Landing!!!!!!</button> -->
-             <a href="./landing.html" style="font-size:10rem" id="buyLink">Go to Landing!!!!!!</a>
+             <a href="./landing.html" style="font-size:10rem" id="buyLink" onclick="buttonclick()">Go to Landing!!!!!!</a>
         </div>
         
         
     </div>
-<!--     <script>
+    <script>
         function buttonclick() {
-                    fetch('https://tr.outbrain.com/pixel?ob_click_id=v1-521545010f74369134460124537c4139-001d2da7ebcaeb022a448ccdc4680c75b1-gjrtczdggazdelldg5stmljugezdmllcga4dollgmiytgmzuheydaylbgq&name=buttonclick')
-                          .then(response => response.json())
-                          .then(data => console.log(data));
+            obApi('track', 'buttonclick');
+//                     fetch('https://tr.outbrain.com/pixel?ob_click_id=v1-521545010f74369134460124537c4139-001d2da7ebcaeb022a448ccdc4680c75b1-gjrtczdggazdelldg5stmljugezdmllcga4dollgmiytgmzuheydaylbgq&name=buttonclick')
+//                           .then(response => response.json())
+//                           .then(data => console.log(data));
             
         }
-      </script> -->
+      </script>
     <!--<script>-->
         <!--const firePixel = (e) => {-->
               <!--/** DO NOT MODIFY THIS CODE**/-->
